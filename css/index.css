@@ -2,10 +2,10 @@
     position: revert;
     width: 100%;
     height: 100vh;
-    background: url("../resources/images/backgrounds/beach.jpg");
+    background: url("../resources/images/backgrounds/beach-bg.png");
 }
 .banner .coco {
-    background: url("../resources/images/backgrounds/coco.png") no-repeat;
+    background: url("../resources/images/backgrounds/beach-coco.png") transparent no-repeat;
     position: absolute;
     width: 100%;
     height: 100%;
