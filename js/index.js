@@ -7,5 +7,5 @@ $(() => {
 });
 
 $(document).on('click', '.click-me', () => {
-    $('html').animate({scrollTop: $('.banner').height()}, 0);
+    $('html').animate({scrollTop: window.innerHeight - 70}, 0);
 });

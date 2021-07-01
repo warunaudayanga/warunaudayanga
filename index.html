@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
@@ -15,7 +16,7 @@
     <title>Document</title>
 </head>
 <body>
-<section class="navbar-container position-sticky top-0">
+<div class="navbar-container position-fixed top-0 w-100">
     <nav class="navbar navbar-expand-lg glass">
         <div class="container-fluid">
             <a class="navbar-brand ps-3" href="#">Waruna Udayanga</a>
@@ -34,31 +35,45 @@
             </div>
         </div>
     </nav>
-</section>
-<div class="banner">
-    <div class="coco"></div>
-    <button class="btn btn-outline-light glass click-me d-block mx-auto"><span>Click Me</span></button>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="banner position-absolute top-0 w-100">
+    <div class="coco position-absolute top-0 w-100 h-100"></div>
+    <button class="btn btn-outline-light glass click-me d-block mx-auto"><span>About Me <i class="fas fa-angle-down"></i></span></button>
+</div>
+<div class="container">
+
+    <h1 class="mt-5 mb-5"><small class="text-muted">#</small> About Me</h1>
+
+    <h1 class="mt-5 mb-5"><small class="text-muted">#</small> My Projects</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="card shadow">
+                <img src="resources/images/erp/001.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ERP System</h5>
+                    <p class="card-text">An ERP System (Point of Sale) with HTML, CSS + Spring MVC</p>
+                    <a href="#" class="btn btn-dark float-end">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card shadow h-100">
+                <img src="resources/images/cge/004.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Weighing Software</h5>
+                    <p class="card-text">Angular + Spring Boot + Electron application for Weighing indication and reporting features. </p>
+                    <a href="#" class="btn btn-orange float-end">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 <br>
 <br>
 <br>

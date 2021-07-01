@@ -27,16 +27,12 @@ html, body {
     /*border: solid 3px transparent;*/
 }
 .glass {
-    /*margin: 200px auto;*/
-    /*border: 1px solid #fff;*/
-    /*border-radius: 15px;*/
     position: relative;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(3px) saturate(100%) contrast(85%) brightness(130%);
     background-color: rgba(0, 0, 0, 0.2);
     /*font-size: 2rem;*/
     overflow: hidden;
-    border-radius: 0;
 }
 .glass * {
     backdrop-filter: blur(0) !important;
@@ -44,4 +40,13 @@ html, body {
 }
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.btn-orange {
+    background-color: #FF6100;
+    color: white;
+}
+.btn-orange:hover {
+    background-color: #d24c01;
+    color: white;
 }
