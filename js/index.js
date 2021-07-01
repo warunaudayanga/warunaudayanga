@@ -1,6 +1,11 @@
-$(function () {
-    console.log($('.banner').ripples());
-    $('.click-me').on('click', () => {
-        $('html, body').animate({scrollTop: $('.banner').height()}, 0);
-    })
-})
+$(() => {
+    $('.banner').ripples();
+    $(document).scroll(() => {
+        if ($(this)[0].scrollY >= $('.banner').height() - 70) $('.navbar-container').addClass('scrolled');
+        else $('.navbar-container').removeClass('scrolled');
+    });
+});
+
+$(document).on('click', '.click-me', () => {
+    $('html').animate({scrollTop: $('.banner').height()}, 0);
+});
