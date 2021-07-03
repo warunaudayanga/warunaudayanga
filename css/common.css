@@ -9,7 +9,7 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: "Roboto Regular", serif;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -30,7 +30,7 @@ html, body {
     position: relative;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(3px) saturate(100%) contrast(85%) brightness(130%);
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     /*font-size: 2rem;*/
     overflow: hidden;
 }
@@ -49,4 +49,22 @@ html, body {
 .btn-orange:hover {
     background-color: #d24c01;
     color: white;
+}
+.gallery img {
+    display: block;
+    margin: auto auto 40px;
+    max-width: 100%;
+}
+.anchor {
+    height: calc(var(--nav-height));
+}
+.spinner-box {
+    height: calc(100vh - var(--nav-height));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.spinner-box .spinner-border {
+
 }

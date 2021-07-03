@@ -2,14 +2,14 @@
     --nav-height: 70px;
 }
 body {
-    padding-top: calc(100vh + 15px);
     background-color: whitesmoke;
+    padding-top: var(--nav-height);
+}
+body.padding {
+    padding-top: 100vh;
 }
 .navbar-container {
     z-index: 1000;
-}
-.navbar-container.scrolled {
-    background: url("../resources/images/backgrounds/beach-bg.png") no-repeat 0 calc(-100vh + 70px);
 }
 .navbar {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -30,16 +30,27 @@ body {
 }
 .navbar .navbar-collapse .nav-item:hover .nav-link {
     color: black;
+    cursor: pointer;
 }
-.banner {
+.banner-container.hide {
+    /*height: var(--nav-height);*/
+}
+.banner-container .banner {
     height: 100vh;
     background: url("../resources/images/backgrounds/beach-bg.png");
 }
-.banner .coco {
+.banner-container.hide .banner {
+    height: var(--nav-height);
+    background: url("../resources/images/backgrounds/beach-bg.png") 0 calc(-100vh + var(--nav-height)) !important;
+}
+.banner-container.hide .banner * {
+    display: none !important;
+}
+.banner-container .banner .coco {
     background: url("../resources/images/backgrounds/beach-coco.png") transparent no-repeat;
 }
 
-.banner .btn {
+.banner-container .banner .btn {
     color: #fff;
     font-size: 2rem;
     font-weight: bold;
@@ -48,7 +59,7 @@ body {
     border-radius: 15px;
 
 }
-.banner .btn:hover {
+.banner-container .banner .btn:hover {
     background: rgba(0, 0, 0, 0.5);
 }
 .click-me {

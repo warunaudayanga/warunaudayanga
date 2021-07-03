@@ -15,7 +15,7 @@
     <script src="js/index.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="padding">
 <div class="navbar-container position-fixed top-0 w-100">
     <nav class="navbar navbar-expand-lg glass">
         <div class="container-fluid">
@@ -26,94 +26,25 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                        <a class="nav-link" aria-current="page" data-page="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">My Projects</a>
+                        <a class="nav-link" aria-current="page" data-page="home" data-id="about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" data-page="home" data-id="projects">My Projects</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </div>
-<div class="banner position-absolute top-0 w-100">
-    <div class="coco position-absolute top-0 w-100 h-100"></div>
-    <button class="btn btn-outline-light glass click-me d-block mx-auto"><span>About Me <i class="fas fa-angle-down"></i></span></button>
-</div>
-<div class="container">
-
-    <h1 class="mt-5 mb-5"><small class="text-muted">#</small> About Me</h1>
-
-    <h1 class="mt-5 mb-5"><small class="text-muted">#</small> My Projects</h1>
-
-    <div class="row">
-        <div class="col-6">
-            <div class="card shadow">
-                <img src="resources/images/erp/001.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">ERP System</h5>
-                    <p class="card-text">An ERP System (Point of Sale) with HTML, CSS + Spring MVC</p>
-                    <a href="#" class="btn btn-dark float-end">View Details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="card shadow h-100">
-                <img src="resources/images/cge/004.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Weighing Software</h5>
-                    <p class="card-text">Angular + Spring Boot + Electron application for Weighing indication and reporting features. </p>
-                    <a href="#" class="btn btn-orange float-end">View Details</a>
-                </div>
-            </div>
-        </div>
+<div class="banner-container">
+    <div class="banner position-absolute top-0 w-100">
+        <div class="coco position-absolute top-0 w-100 h-100"></div>
+        <button class="btn btn-outline-light glass click-me d-block mx-auto"><span>View More <i class="fas fa-angle-down"></i></span></button>
     </div>
 </div>
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div id="content" class="container overflow-hidden"></div>
 </body>
 </html>
