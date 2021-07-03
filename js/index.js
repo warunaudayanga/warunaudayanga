@@ -3,6 +3,7 @@
 let lastPage;
 
 $(() => {
+    $('.banner').ripples();
     load('home');
 });
 
