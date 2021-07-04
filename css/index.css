@@ -49,10 +49,10 @@ body.padding {
 }
 .banner-container .banner {
   height: 100vh;
-  background: url("../resources/images/backgrounds/beach-bg.png");
+  background: url("../resources/images/backgrounds/beach-bg.png") fixed;
 }
 .banner-container .banner .coco {
-  background: url("../resources/images/backgrounds/beach-coco.png") transparent no-repeat;
+  background: transparent url("../resources/images/backgrounds/beach-coco.png") no-repeat fixed;
 }
 .banner-container .banner .container {
   display: flex;
