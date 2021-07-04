@@ -49,10 +49,12 @@ body.padding {
     }
     .banner {
         height: 100vh;
-        background: url("../resources/images/backgrounds/compress/beach-bg_vectorized.png") fixed;
+        background: url("../resources/images/backgrounds/beach-bg.png") fixed;
+        //background: url("../resources/images/backgrounds/compress/beach-bg_vectorized.png") fixed;
         background-size: cover;
         .coco {
-            background: rgb(0 181 255 / 40%) url("../resources/images/backgrounds/compress/beach-coco_vectorized.png") no-repeat fixed;
+            background: transparent url("../resources/images/backgrounds/beach-coco.png") no-repeat fixed;
+            //background: rgb(0 181 255 / 40%) url("../resources/images/backgrounds/compress/beach-coco_vectorized.png") no-repeat fixed;
             background-size: contain;
         }
         .container {
