@@ -1,0 +1,110 @@
+:root {
+    --nav-height: 70px;
+}
+body {
+    background-color: whitesmoke;
+    padding-top: var(--nav-height);
+}
+body.padding {
+    padding-top: 100vh;
+}
+.navbar-container {
+    z-index: 1000;
+}
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    min-height: var(--nav-height);
+    * {
+        color: #fff;
+    }
+    .navbar-brand {
+        padding-top: 0;
+        font-size: 25px;
+        font-family: 'Otomanopee One', sans-serif;
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+    .navbar-collapse {
+        padding-left: 30px;
+        .nav-item:hover {
+            .nav-link:hover {
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.banner-container {
+    &.hide {
+        .banner {
+            height: var(--nav-height);
+            background: url("../resources/images/backgrounds/beach-bg.png") 0 calc(-100vh + var(--nav-height)) !important;
+            * {
+                display: none !important;
+            }
+        }
+    }
+    .banner {
+        height: 100vh;
+        background: url("../resources/images/backgrounds/beach-bg.png");
+        .coco {
+            background: url("../resources/images/backgrounds/beach-coco.png") transparent no-repeat;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: var(--nav-height);
+            height: calc(100vh - var(--nav-height));
+            * {
+                color: #fff;
+            }
+            .profile-picture {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+            svg path {
+                background-color: red;
+            }
+            .greeting {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                .s1 {
+                    font-size: 50px;
+                    line-height: 50px;
+                }
+                .s2 {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+                .s3 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+                :nth-child(3) {
+                    border-radius: 30px 30px 0 0 !important;
+                }
+                > * {
+                    display: inline-block;
+                    color: #ffffff;
+                    text-align: center;
+                    font-family: 'Fredoka One', sans-serif;
+                    border-radius: 30px;
+                }
+            }
+            .click-me {
+                font-size: 2rem;
+                transition: 0.5s;
+                border-radius: 15px;
+                &:hover {
+                    background: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}

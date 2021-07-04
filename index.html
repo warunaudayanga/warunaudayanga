@@ -6,11 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/jquery-confirm-v3.3.4/jquery-confirm.min.css">
     <link rel="stylesheet" href="assets/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/jquery-confirm-v3.3.4/jquery-confirm.min.js"></script>
     <script src="assets/jquery.ripples/jquery.ripples-min.js"></script>
     <script src="js/index.js"></script>
     <title>Waruna Udayanga</title>
@@ -19,7 +21,7 @@
 <div class="navbar-container position-fixed top-0 w-100">
     <nav class="navbar navbar-expand-lg glass">
         <div class="container-fluid">
-            <a class="navbar-brand ps-3" href="#">Waruna Udayanga</a>
+            <a class="navbar-brand nav-link ps-3" data-page="home">Waruna Udayanga</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,7 +44,16 @@
 <div class="banner-container">
     <div class="banner position-absolute top-0 w-100">
         <div class="coco position-absolute top-0 w-100 h-100"></div>
-        <button class="btn btn-outline-light glass click-me d-block mx-auto"><span>View More <i class="fas fa-angle-down"></i></span></button>
+        <div class="container position-relative overflow-hidden py-3">
+            <img src="resources/images/me.jpg" class="img-thumbnail glass bordered profile-picture mb-3" alt="profile-picture">
+            <div class="greeting d-flex flex-column align-items-center">
+                <div class="glass s1 m-0 py-1 px-3 mb-3">Hello.</div>
+                <div class="glass s2 m-0 pt-1 pb-2 px-3 mb-3">I'm Waruna Udayanga</div>
+                <div class="glass s3 m-0 pt-1 pb-2 px-3">I am a Web Developer</div>
+                <div class="glass s3 m-0 pt-1 pb-2 px-3"> and a Software Developer</div>
+            </div>
+            <button class="btn btn-outline-light glass bordered click-me d-block mx-auto"><span>View More <i class="fas fa-angle-down"></i></span></button>
+        </div>
     </div>
 </div>
 <div id="content" class="container overflow-hidden"></div>

@@ -16,6 +16,26 @@ $(document).on('click', '.nav-link', (e) => {
     load($(e.target).data('page'), $(e.target).data('id'));
 });
 
+const popup = (page, title, button, cls, url) => {
+    $.alert({
+        title: title,
+        content: 'url:' + page + '.html',
+        columnClass: 'col-md-12',
+        backgroundDismiss: true,
+        buttons: {
+            viewProject: {
+                isHidden: !button,
+                text: button,
+                action: () => {
+                    window.open(url, '_blank');
+                },
+                btnClass: cls
+            },
+            close: { }
+        }
+    });
+}
+
 const load = (page, id) => {
     if(page !== 'home') {
         $('.banner-container').addClass('hide');

@@ -1,67 +1,111 @@
 :root {
-    --nav-height: 70px;
+  --nav-height: 70px;
 }
+
 body {
-    background-color: whitesmoke;
-    padding-top: var(--nav-height);
+  background-color: whitesmoke;
+  padding-top: var(--nav-height);
 }
+
 body.padding {
-    padding-top: 100vh;
+  padding-top: 100vh;
 }
+
 .navbar-container {
-    z-index: 1000;
+  z-index: 1000;
 }
+
 .navbar {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    min-height: var(--nav-height);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  min-height: var(--nav-height);
 }
 .navbar * {
-    color: #fff;
-    /*font-weight: bold;*/
+  color: #fff;
 }
 .navbar .navbar-brand {
-    font-size: 27px;
+  padding-top: 0;
+  font-size: 25px;
+  font-family: "Otomanopee One", sans-serif;
 }
 .navbar .navbar-brand:hover {
-    color: white;
+  color: white;
+  cursor: pointer;
 }
 .navbar .navbar-collapse {
-    padding-left: 30px;
+  padding-left: 30px;
 }
-.navbar .navbar-collapse .nav-item:hover .nav-link {
-    color: black;
-    cursor: pointer;
+.navbar .navbar-collapse .nav-item:hover .nav-link:hover {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
-.banner-container.hide {
-    /*height: var(--nav-height);*/
-}
-.banner-container .banner {
-    height: 100vh;
-    background: url("../resources/images/backgrounds/beach-bg.png");
-}
+
 .banner-container.hide .banner {
-    height: var(--nav-height);
-    background: url("../resources/images/backgrounds/beach-bg.png") 0 calc(-100vh + var(--nav-height)) !important;
+  height: var(--nav-height);
+  background: url("../resources/images/backgrounds/beach-bg.png") 0 calc(-100vh + var(--nav-height)) !important;
 }
 .banner-container.hide .banner * {
-    display: none !important;
+  display: none !important;
+}
+.banner-container .banner {
+  height: 100vh;
+  background: url("../resources/images/backgrounds/beach-bg.png");
 }
 .banner-container .banner .coco {
-    background: url("../resources/images/backgrounds/beach-coco.png") transparent no-repeat;
+  background: url("../resources/images/backgrounds/beach-coco.png") transparent no-repeat;
+}
+.banner-container .banner .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--nav-height);
+  height: calc(100vh - var(--nav-height));
+}
+.banner-container .banner .container * {
+  color: #fff;
+}
+.banner-container .banner .container .profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.banner-container .banner .container svg path {
+  background-color: red;
+}
+.banner-container .banner .container .greeting {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.banner-container .banner .container .greeting .s1 {
+  font-size: 50px;
+  line-height: 50px;
+}
+.banner-container .banner .container .greeting .s2 {
+  font-size: 40px;
+  line-height: 40px;
+}
+.banner-container .banner .container .greeting .s3 {
+  font-size: 30px;
+  line-height: 30px;
+}
+.banner-container .banner .container .greeting :nth-child(3) {
+  border-radius: 30px 30px 0 0 !important;
+}
+.banner-container .banner .container .greeting > * {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Fredoka One", sans-serif;
+  border-radius: 30px;
+}
+.banner-container .banner .container .click-me {
+  font-size: 2rem;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.banner-container .banner .container .click-me:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.banner-container .banner .btn {
-    color: #fff;
-    font-size: 2rem;
-    /*font-weight: bold;*/
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    transition: 0.5s;
-    border-radius: 15px;
-
-}
-.banner-container .banner .btn:hover {
-    background: rgba(0, 0, 0, 0.5);
-}
-.click-me {
-    margin-top: 400px;
-}
+/*# sourceMappingURL=index.css.map */
