@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Roboto Regular;
-    src: url(../resources/fonts/roboto/Roboto-Regular.ttf);
+    font-family: Roboto Thin;
+    src: url(../resources/fonts/roboto/Roboto-Thin.ttf);
 }
 * {
     box-sizing: border-box !important;
@@ -8,7 +8,7 @@
 html, body {
     padding: 0;
     margin: 0;
-    font-family: "Roboto Regular", serif;
+    font-family: "Roboto Thin", serif;
     /*scroll-behavior: smooth;*/
 }
 ::-webkit-scrollbar {
