@@ -41,7 +41,7 @@ body.padding {
     &.hide {
         .banner {
             height: var(--nav-height);
-            background: url("../resources/images/backgrounds/beach-bg.png") 0 calc(-100vh + var(--nav-height)) !important;
+            //background: url("../resources/images/backgrounds/beach-bg.png") 0 calc(-100vh + var(--nav-height)) !important;
             * {
                 display: none !important;
             }
