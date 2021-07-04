@@ -50,9 +50,11 @@ body.padding {
 .banner-container .banner {
   height: 100vh;
   background: url("../resources/images/backgrounds/beach-bg.png") fixed;
+  background-size: cover;
 }
 .banner-container .banner .coco {
   background: transparent url("../resources/images/backgrounds/beach-coco.png") no-repeat fixed;
+  background-size: contain;
 }
 .banner-container .banner .container {
   display: flex;
