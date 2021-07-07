@@ -2,6 +2,10 @@
 
 let lastPage;
 
+let ado = () => {
+    $('.loader').css('animation', 'animFw 1s linear')
+}
+
 $(() => {
     $('.banner').ripples();
     load('home');
