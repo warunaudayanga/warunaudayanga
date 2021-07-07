@@ -106,4 +106,8 @@ body.padding {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.card .project-thumb {
+  padding: 50px;
+}
+
 /*# sourceMappingURL=index.css.map */

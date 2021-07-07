@@ -43,6 +43,8 @@ const load = (page, id) => {
     } else {
         $('.banner-container').removeClass('hide');
         $('body').addClass('padding');
+        console.log(location.hash);
+        if(location.hash) $('html, body').scrollTop($(location.hash).offset().top);
     }
     if(lastPage !== page) {
         $('#content').html('<div class="spinner-box"><div class="spinner-border" role="status"></div></div>');
