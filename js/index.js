@@ -1,14 +1,19 @@
-// noinspection JSJQueryEfficiency
-
 let lastPage;
 
-let ado = () => {
-    $('.loader').css('animation', 'animFw 1s linear')
-}
-
 $(() => {
+    particlesJS.load('particles-js', 'particles.json',
+        function(){
+            console.log('particles.json loaded...');
+        })
     $('.banner').ripples();
     load('home');
+});
+
+$(window).on('load', function(){
+    $('body').removeClass('loading');
+    $('.loader-backdrop').animate({opacity: 0}, function () {
+        $(this).hide();
+    });
 });
 
 $(document).on('click', '.click-me', () => {
