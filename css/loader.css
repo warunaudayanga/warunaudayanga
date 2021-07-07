@@ -207,6 +207,8 @@ body.loading {
   width: 140px;
   height: 140px;
   text-align: center;
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
   border: 5px solid #3bb2d0;
   border-radius: 70px;
   box-sizing: border-box;
