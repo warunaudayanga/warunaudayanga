@@ -1,10 +1,7 @@
 let lastPage;
 
 $(() => {
-    particlesJS.load('particles-js', 'particles.json',
-        function(){
-            console.log('particles.json loaded...');
-        })
+    particlesJS.load('particles-js', 'particlesjs-config.json');
     $('.banner').ripples();
     load('home');
 });
