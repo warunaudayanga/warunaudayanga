@@ -40,7 +40,7 @@ $(window).on('load', function(){
     } else {
         setTimeout(() => {
             hideLoading();
-        }, 3000)
+        }, 5000)
     }
 });
 
