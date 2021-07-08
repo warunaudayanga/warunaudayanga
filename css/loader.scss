@@ -78,10 +78,6 @@ $f-body:'Open Sans', sans-serif;
     100% {color:#3BB2D0;}
 }
 
-body.loading {
-    overflow: hidden;
-}
-
 .loader-backdrop {
     background-color: #222;
     position: fixed;
@@ -98,7 +94,7 @@ body.loading {
     border:5px solid #1B5F70;
     border-radius:120px;
     box-sizing:border-box;
-
+    left: calc(50% + 5px);
 
     &:after{
         @include centre;
@@ -150,7 +146,7 @@ body.loading {
             width:140px;
             height:140px;
             text-align:center;
-            font-size:62.5%;
+            font-size:100%;
             font-family:$f-body;
 
             border:5px solid lighten(#1B5F70, 25%);

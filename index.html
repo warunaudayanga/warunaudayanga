@@ -20,52 +20,139 @@
     <script src="js/index.js"></script>
     <title>Waruna Udayanga</title>
 </head>
-<body class="padding loading">
-<div class="loader-backdrop">
-    <div class="load-holder">
-        <div class="m-loader">
-            <span class="e-text">Loading</span>
-        </div>
-    </div>
-    <div id="particles-js"></div>
-</div>
-<div class="navbar-container position-fixed top-0 w-100">
-    <nav class="navbar navbar-expand-lg glass">
-        <div class="container-fluid">
-            <a class="navbar-brand nav-link ps-3" data-page="home">Waruna Udayanga</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" data-page="home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" data-page="home" data-id="about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" data-page="home" data-id="projects">My Projects</a>
-                    </li>
-                </ul>
+<body>
+<div class="body">
+    <div class="loader-backdrop">
+        <div class="load-holder">
+            <div class="m-loader">
+                <span class="e-text">Loading</span>
             </div>
         </div>
-    </nav>
-</div>
-<div class="banner-container">
-    <div class="banner position-absolute top-0 w-100">
-        <div class="coco position-absolute top-0 w-100 h-100"></div>
-        <div class="container position-relative overflow-hidden py-3">
-            <img src="resources/images/me.png" class="img-thumbnail glass bordered profile-picture mb-3" alt="profile-picture">
-            <div class="greeting d-flex flex-column align-items-center">
-                <div class="glass s1 m-0 py-1 px-3 mb-3">Hello.</div>
-                <div class="glass s2 m-0 pt-1 pb-2 px-3 mb-3">I'm Waruna Udayanga</div>
-                <div class="glass s3 m-0 pt-1 pb-2 px-3">Web Developer | Software Engineer</div>
+        <div id="particles-js"></div>
+    </div>
+    <div id="nav" class="navbar-container position-fixed top-0 w-100">
+        <nav class="navbar navbar-expand-lg glass">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-link ps-3" href="#home">Waruna Udayanga</a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#projects">My Projects</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <button class="btn btn-outline-light glass bordered click-me d-block mx-auto"><span>View More <i class="fas fa-angle-down"></i></span></button>
+        </nav>
+    </div>
+
+    <div id="banner" class="banner-container">
+        <div class="banner position-absolute top-0 w-100">
+            <div class="coco position-absolute top-0 w-100 h-100">
+            </div>
+            <div class="container position-relative overflow-hidden py-3">
+                <img src="resources/images/me.png" class="img-thumbnail glass bordered profile-picture mb-3" alt="profile-picture">
+                <div class="greeting d-flex flex-column align-items-center">
+                    <div class="glass s1 m-0 py-1 px-3 mb-3">Hello.</div>
+                    <div class="glass s2 m-0 pt-1 pb-2 px-3 mb-3">I'm Waruna Udayanga</div>
+                    <div class="glass s3 m-0 pt-1 pb-2 px-3">Web Developer | Software Engineer</div>
+                </div>
+                <button class="btn btn-outline-light glass bordered click-me d-block mx-auto"><span>View More <i class="fas fa-angle-down"></i></span></button>
+            </div>
         </div>
     </div>
+
+    <div id="content">
+
+        <div class="container">
+
+            <section class="padding" id="home"></section>
+
+            <section class="anchor" id="about"></section>
+            <h1 class="mt-3 mb-5"><small class="text-muted">#</small> About Me</h1>
+
+            <div class="row">
+                <h2>Let me introduce myself.</h2>
+                <h4>Me me me.</h4>
+            </div>
+
+            <section class="anchor mb-3" id="projects"></section>
+            <h1 class="mt-3 mb-5"><small class="text-muted">#</small> My Projects</h1>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mb-5">
+                    <div class="card shadow h-100">
+                        <img src="resources/images/erp/erp.png" class="card-img-top project-thumb" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">ERP System</h5>
+                            <p class="card-text">An ERP System (Point of Sale) with HTML, CSS + Spring MVC</p>
+                            <button onclick="popup('erp', 'Project Details', 'View Application', 'btn-blue', 'https://fastsolutions.herokuapp.com/')" class="btn btn-dark mt-auto">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mb-5">
+                    <div class="card shadow h-100">
+                        <img src="resources/images/cge/cge.png" class="card-img-top project-thumb" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Weighing Software</h5>
+                            <p class="card-text">Angular + Spring Boot + Electron application for Weighing indication and reporting features. </p>
+                            <button onclick="popup('cge', 'Project Details')" class="btn btn-orange mt-auto">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </div>
 </div>
-<div id="content" class="container"></div>
 </body>
 </html>

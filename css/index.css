@@ -2,12 +2,18 @@
   --nav-height: 70px;
 }
 
-body {
+.body {
   background-color: whitesmoke;
   padding-top: var(--nav-height);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
-body.padding {
+.padding {
   padding-top: 100vh;
 }
 
@@ -17,7 +23,7 @@ body.padding {
 
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  min-height: var(--nav-height);
+  padding: 14.5px 0;
 }
 .navbar * {
   color: #fff;
@@ -50,10 +56,12 @@ body.padding {
   height: 100vh;
   background: url("../resources/images/backgrounds/beach-bg.jpg") fixed;
   background-size: cover;
+  z-index: 1;
 }
 .banner-container .banner .coco {
+  height: 100vh;
   background: transparent url("../resources/images/backgrounds/beach-coco.png") no-repeat fixed;
-  background-size: contain;
+  background-size: cover;
 }
 .banner-container .banner .container {
   display: flex;
@@ -78,18 +86,6 @@ body.padding {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.banner-container .banner .container .greeting .s1 {
-  font-size: 50px;
-  line-height: 50px;
-}
-.banner-container .banner .container .greeting .s2 {
-  font-size: 40px;
-  line-height: 40px;
-}
-.banner-container .banner .container .greeting .s3 {
-  font-size: 30px;
-  line-height: 30px;
-}
 .banner-container .banner .container .greeting > * {
   display: inline-block;
   color: #ffffff;
@@ -105,13 +101,97 @@ body.padding {
 .banner-container .banner .container .click-me:hover {
   background: rgba(0, 0, 0, 0.5);
 }
-.banner-container .banner canvas {
-  width: 100%;
-  height: 100vh;
+#content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }
 
 .card .project-thumb {
   padding: 50px;
+}
+
+@media (max-width: 575.98px) {
+  .navbar .navbar-brand {
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  .banner-container .banner .container .greeting .s1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .banner-container .banner .container .greeting .s2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .banner-container .banner .container .greeting .s3 {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .anchor {
+    height: 70px;
+  }
+}
+@media (min-width: 576px) {
+  .banner .greeting .s1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .banner .greeting .s2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .banner .greeting .s3 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .anchor {
+    height: 72px;
+  }
+}
+@media (min-width: 768px) {
+  .banner .container .greeting .s1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .banner .container .greeting .s2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .banner .container .greeting .s3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .anchor {
+    height: 87px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .navbar-brand {
+    font-size: 35px;
+  }
+
+  .navbar .navbar-collapse .nav-link {
+    font-size: 25px;
+  }
+
+  .greeting .s1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .greeting .s2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .greeting .s3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
