@@ -129,6 +129,10 @@
     }
 }
 
+.text-responsive {
+    text-align: justify;
+}
+
 @include media-breakpoint-down(sm) {
     .navbar .navbar-brand {
         margin-right: 0;
@@ -151,6 +155,10 @@
     .anchor {
         height: 70px;
     }
+    .text-responsive {
+        font-size: 4vw;
+    }
+
 }
 @include media-breakpoint-up(sm) {
     .banner .greeting {
@@ -211,4 +219,9 @@
             line-height: 40px;
         }
     }
+}
+
+// Dev
+.banner-container, .padding {
+    //display: none;
 }

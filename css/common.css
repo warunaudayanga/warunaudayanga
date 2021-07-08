@@ -3,6 +3,10 @@
   src: url(../resources/fonts/roboto/Roboto-Light.ttf);
 }
 @font-face {
+  font-family: "Roboto Regular";
+  src: url(../resources/fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face {
   font-family: "Otomanopee One";
   font-style: normal;
   font-weight: 400;
@@ -24,6 +28,14 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: "Roboto Light", serif;
+}
+
+.robo-r {
+  font-family: "Roboto Regular", sans-serif;
+}
+
+.robo-l {
+  font-family: "Roboto Light", sans-serif;
 }
 
 .body::-webkit-scrollbar {
@@ -77,6 +89,10 @@ html, body {
   display: block;
   margin: auto auto 40px;
   max-width: 100%;
+}
+
+.anchor {
+  height: calc(var(--nav-height));
 }
 
 .spinner-box {

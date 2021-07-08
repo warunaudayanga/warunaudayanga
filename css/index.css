@@ -112,6 +112,10 @@
   padding: 50px;
 }
 
+.text-responsive {
+  text-align: justify;
+}
+
 @media (max-width: 575.98px) {
   .navbar .navbar-brand {
     margin-right: 0;
@@ -133,6 +137,10 @@
 
   .anchor {
     height: 70px;
+  }
+
+  .text-responsive {
+    font-size: 4vw;
   }
 }
 @media (min-width: 576px) {

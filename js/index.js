@@ -1,4 +1,3 @@
-let lastPage;
 let preloading = true;
 setTimeout(() => {
     preloading = false;
@@ -40,7 +39,7 @@ $(window).on('load', function(){
     } else {
         setTimeout(() => {
             hideLoading();
-        }, 5000)
+        }, 3000)
     }
 });
 
