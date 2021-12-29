@@ -114,6 +114,12 @@
 .card .card-body {
   padding: 0 50px 50px;
 }
+.card.details {
+  margin-bottom: 5px;
+}
+.card.details .card-body {
+  padding: 50px;
+}
 
 .text-responsive {
   text-align: justify;
@@ -161,6 +167,16 @@
   .about-icon {
     width: 75px;
     height: 75px;
+  }
+
+  .card .project-thumb {
+    padding: 25px 25px 15px;
+  }
+  .card .card-body {
+    padding: 0 25px 25px;
+  }
+  .card.details .card-body {
+    padding: 25px;
   }
 }
 @media (min-width: 576px) {
