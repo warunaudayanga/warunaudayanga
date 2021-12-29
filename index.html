@@ -25,7 +25,7 @@
 </head>
 <body>
 <div class="body">
-    <div class="loader-backdrop">
+    <div class="loader-backdrop d-none">
         <div class="load-holder">
             <div class="m-loader">
                 <span class="e-text">Loading</span>
@@ -80,43 +80,109 @@
             <section class="padding" id="home"></section>
 
             <section class="anchor" id="about"></section>
-            <h1 class="mt-3 mb-3 text-center robo-r fw-bold"><small class="text-muted">#</small> Let me introduce myself. </h1>
 
-            <div class="row">
-                <h2 class="fw-bold"></h2>
-                <h4 class="offset-1 offset-md-1 offset-lg-1 col-10 col-md-10 col-lg-10 text-responsive">
-                    I am a Sri Lankan based Software Engineer and a Full Stack Web Developer. I design Web Applications,
-                    front-end with Angular&nbsp;+&nbsp;Material, Bootstrap&nbsp;+&nbsp;jQuery, HTML, CSS and back-end with NodeJS&nbsp;+&nbsp;Express,
-                    Java&nbsp;+&nbsp;Spring Boot, As well as Desktop Applications based on above technologies with teh use of ElectronJS.
-                    I also develop Desktop Application in JavaFX.
-                </h4>
-            </div>
+            <section class="section about">
+                <h1 class="pt-3 mb-5 text-center robo-r fw-bold"><small class="text-muted">#</small> Let me introduce myself. </h1>
+                <div class="row">
+                    <h2 class="fw-bold"></h2>
+                    <h4 class="offset-1 offset-md-1 offset-lg-1 col-10 col-md-10 col-lg-10 text-responsive">
+                        I am a Sri Lankan based Software Engineer and a Full Stack Web Developer. I design Web Applications,
+                        front-end with Angular&nbsp;+&nbsp;Material, Bootstrap&nbsp;+&nbsp;jQuery, HTML, CSS and back-end with NodeJS&nbsp;+&nbsp;Express,
+                        Java&nbsp;+&nbsp;Spring Boot, As well as Desktop Applications based on above technologies with the use of ElectronJS.
+                        I also develop Desktop Application in JavaFX.
+                    </h4>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="offset-1 offset-md-1 offset-lg-1 col-10 col-md-10 col-lg-10 text-responsive">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-3 text-responsive">
+                                <a class="contact-card pt-3 pt-md-5 mb-4" href="tel:+94756446377">
+                                    <img src="resources/images/icons/phone.png" class="about-icon" alt="phone">
+                                    <div class="content pt-3 py-md-3">
+                                        <h6 class="fw-bold">Call</h6>
+                                        <p>+94 75 644 6377</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 text-responsive">
+                                <a class="contact-card pt-3 pt-md-5 mb-4" href="https://wa.me/94756446377" target="_blank">
+                                    <img src="resources/images/icons/whatsapp.png" class="about-icon" alt="phone">
+                                    <div class="content pt-3 py-md-3">
+                                        <h6 class="fw-bold">WhatsApp</h6>
+                                        <p>+94 75 644 6377</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 text-responsive">
+                                <a class="contact-card pt-3 pt-md-5 mb-4" href="mailto:avawaruna@gmail.com">
+                                    <img src="resources/images/icons/email.png" class="about-icon" alt="phone">
+                                    <div class="content pt-3 py-md-3">
+                                        <h6 class="fw-bold">E-mail</h6>
+                                        <p>avawaruna@gmail.com</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-3 text-responsive">
+                                <a class="contact-card pt-3 pt-md-5 mb-4" href="https://www.linkedin.com/in/warunaudayanga/" target="_blank">
+                                    <img src="resources/images/icons/linkedin.png" class="about-icon" alt="phone">
+                                    <div class="content pt-3 py-md-3">
+                                        <h6 class="fw-bold">LinkedIn</h6>
+                                        <p>warunaudayanga</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--                <div class="row mt-4">-->
+<!--                    <div class="offset-1 offset-md-1 offset-lg-1 col-10 col-md-10 col-lg-10 text-responsive">-->
+<!--                        <a class="d-flex align-items-center" href="mailto:avawaruna@gmail.com">-->
+<!--                            <img src="resources/images/icons/email.png" class="about-icon" alt="phone">-->
+<!--                            <h5 class="fw-bold ps-3">avawaruna@gmail.com</h5>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row mt-4">-->
+<!--                    <div class="offset-1 offset-md-1 offset-lg-1 col-10 col-md-10 col-lg-10 text-responsive">-->
+<!--                        <a class="d-flex align-items-center" href="https://www.linkedin.com/in/warunaudayanga/" target="_blank">-->
+<!--                            <img src="resources/images/icons/linkedin.png" class="about-icon" alt="phone">-->
+<!--                            <h5 class="fw-bold ps-3">warunaudayanga</h5>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </section>
 
             <section class="anchor mb-3" id="projects"></section>
-            <h1 class="mt-3 mb-5 robo-r fw-bold"><small class="text-muted">#</small> My Projects</h1>
 
-            <div class="row">
-                <div class="col-md-6 col-sm-12 mb-5">
-                    <div class="card shadow h-100">
-                        <img src="resources/images/erp/erp.png" class="card-img-top project-thumb" alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">ERP System</h5>
-                            <p class="card-text">An ERP System (Point of Sale) with HTML, CSS + Spring MVC</p>
-                            <button onclick="popup('erp', 'Project Details', 'View Application', 'btn-blue', 'https://fastsolutions.herokuapp.com/')" class="btn btn-dark mt-auto">View Details</button>
+            <section class="section projects">
+                <h1 class="mt-3 mb-5 robo-r fw-bold"><small class="text-muted">#</small> My Projects</h1>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mb-5">
+                        <div class="card shadow h-100">
+                            <img src="resources/images/erp/erp.png" class="card-img-top project-thumb" alt="...">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">ERP System</h5>
+                                <p class="card-text">An ERP System (Point of Sale) with HTML, CSS + Spring MVC</p>
+                                <button onclick="popup('erp', 'Project Details', 'View Application', 'btn-blue', 'https://fastsolutions.herokuapp.com/')" class="btn btn-dark mt-auto">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 mb-5">
+                        <div class="card shadow h-100">
+                            <img src="resources/images/cge/cge.png" class="card-img-top project-thumb" alt="...">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Weighing Software</h5>
+                                <p class="card-text">Angular + Spring Boot + Electron application for Weighing indication and reporting features. </p>
+                                <button onclick="popup('cge', 'Project Details')" class="btn btn-orange mt-auto">View Details</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 mb-5">
-                    <div class="card shadow h-100">
-                        <img src="resources/images/cge/cge.png" class="card-img-top project-thumb" alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Weighing Software</h5>
-                            <p class="card-text">Angular + Spring Boot + Electron application for Weighing indication and reporting features. </p>
-                            <button onclick="popup('cge', 'Project Details')" class="btn btn-orange mt-auto">View Details</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
+
             <br>
             <br>
             <br>

@@ -102,5 +102,24 @@ html, body {
   align-items: center;
   justify-content: center;
 }
+.contact-card {
+  padding: 16px;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.contact-card .content {
+  text-align: center;
+  white-space: nowrap;
+}
+.contact-card .content p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
 
 /*# sourceMappingURL=common.css.map */

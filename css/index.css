@@ -116,6 +116,18 @@
   text-align: justify;
 }
 
+.section.about a {
+  text-decoration: none;
+  color: black;
+}
+.section.about h6 {
+  margin: 0;
+}
+.section.about .about-icon {
+  display: block;
+  margin: auto;
+}
+
 @media (max-width: 575.98px) {
   .navbar .navbar-brand {
     margin-right: 0;
@@ -140,7 +152,12 @@
   }
 
   .text-responsive {
-    font-size: 4vw;
+    font-size: 14px;
+  }
+
+  .about-icon {
+    width: 75px;
+    height: 75px;
   }
 }
 @media (min-width: 576px) {
@@ -160,6 +177,15 @@
   .anchor {
     height: 72px;
   }
+
+  .text-responsive {
+    font-size: 18px;
+  }
+
+  .about-icon {
+    width: 100px;
+    height: 100px;
+  }
 }
 @media (min-width: 768px) {
   .banner .container .greeting .s1 {
@@ -177,6 +203,10 @@
 
   .anchor {
     height: 87px;
+  }
+
+  .text-responsive {
+    font-size: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -199,6 +229,10 @@
   .greeting .s3 {
     font-size: 40px;
     line-height: 40px;
+  }
+
+  .text-responsive {
+    font-size: 25px;
   }
 }
 

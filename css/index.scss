@@ -133,6 +133,22 @@
     text-align: justify;
 }
 
+.section {
+    &.about {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        h6 {
+            margin: 0;
+        }
+        .about-icon {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
 @include media-breakpoint-down(sm) {
     .navbar .navbar-brand {
         margin-right: 0;
@@ -156,10 +172,14 @@
         height: 70px;
     }
     .text-responsive {
-        font-size: 4vw;
+        font-size: 14px;
     }
-
+    .about-icon {
+        width: 75px;
+        height: 75px;
+    }
 }
+
 @include media-breakpoint-up(sm) {
     .banner .greeting {
         .s1 {
@@ -178,7 +198,15 @@
     .anchor {
         height: 72px;
     }
+    .text-responsive {
+        font-size: 18px;
+    }
+    .about-icon {
+        width: 100px;
+        height: 100px;
+    }
 }
+
 @include media-breakpoint-up(md) {
     .banner .container .greeting {
         .s1 {
@@ -197,7 +225,11 @@
     .anchor {
         height: 87px;
     }
+    .text-responsive {
+        font-size: 20px;
+    }
 }
+
 @include media-breakpoint-up(lg) {
     .navbar .navbar-brand {
         font-size: 35px;
@@ -218,6 +250,9 @@
             font-size: 40px;
             line-height: 40px;
         }
+    }
+    .text-responsive {
+        font-size: 25px;
     }
 }
 

@@ -1,4 +1,5 @@
 let preloading = true;
+
 setTimeout(() => {
     preloading = false;
 }, 3000);
@@ -31,6 +32,8 @@ const popup = (page, title, button, cls, url) => {
 
 $(() => {
     $('.banner').ripples();
+    console.log($(window).height());
+    $('.section').css('minHeight', ($(window).height() - $('#nav').height()) + 'px')
 });
 
 $(window).on('load', function(){
@@ -44,7 +47,7 @@ $(window).on('load', function(){
 });
 
 $(document).on('click', '.click-me', () => {
-    $('.body').animate({scrollTop: window.innerHeight - $('#nav').height()}, 0);
+    $('.body').animate({ scrollTop: window.innerHeight - $('#nav').height() + $('#about').height() }, 0);
 });
 
 $(document).on('click', '.nav-link, .banner-container, #content', () => {
