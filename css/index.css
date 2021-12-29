@@ -109,7 +109,10 @@
 }
 
 .card .project-thumb {
-  padding: 50px;
+  padding: 50px 50px 25px;
+}
+.card .card-body {
+  padding: 0 50px 50px;
 }
 
 .text-responsive {
