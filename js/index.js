@@ -13,7 +13,7 @@ const hideLoading = () => {
 const popup = (page, title, button, cls, url) => {
     $.alert({
         title: title,
-        content: 'url:' + page + '.html',
+        content: 'url:projects/' + page + '.html',
         columnClass: 'col-md-12',
         backgroundDismiss: true,
         buttons: {
