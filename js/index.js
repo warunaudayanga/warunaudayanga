@@ -4,9 +4,20 @@ setTimeout(() => {
     preloading = false;
 }, 3000);
 
+const routeTo = () => {
+    const href = window.location.href;
+    const route = href.split("#")[1];
+    if(route) {
+        console.log(route);
+        $('#' + route).trigger('click');
+    }
+}
+
 const hideLoading = () => {
     $('.loader-backdrop').animate({opacity: 0}, function () {
-        $(this).hide('slow');
+        $(this).hide('slow', () => {
+            routeTo();
+        });
     });
 }
 
