@@ -2,24 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/loader.css">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="css/loader.css" rel="stylesheet">
     <script src="assets/jquery/jquery-3.2.1.min.js"></script>
     <script src="assets/particles/particles.min.js"></script>
     <script src="js/loader.js"></script>
-    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/jquery-confirm-v3.3.4/jquery-confirm.min.css">
-    <link rel="stylesheet" href="assets/fontawesome-free-5.15.3-web/css/all.min.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/jquery-confirm-v3.3.4/jquery-confirm.min.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-5.15.3-web/css/all.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/jquery-confirm-v3.3.4/jquery-confirm.min.js"></script>
     <script src="assets/jquery.ripples/jquery.ripples-min.js"></script>
     <script src="js/index.js"></script>
     <script>
-        // $(()=>{$('.loader-backdrop').hide()}); // TODOS
+        $(() => {
+            $('.loader-backdrop').hide()
+        });
     </script>
     <title>Waruna Udayanga</title>
 </head>
@@ -33,23 +35,28 @@
         </div>
         <div id="particles-js"></div>
     </div>
-    <div id="nav" class="navbar-container position-fixed top-0 w-100">
+    <div class="navbar-container position-fixed top-0 w-100" id="nav">
         <nav class="navbar navbar-expand-lg glass">
             <div class="container-fluid">
                 <a class="navbar-brand nav-link ps-3" href="#home">Waruna Udayanga</a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <button aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler collapsed" data-bs-target="#navbarCollapse" data-bs-toggle="collapse"
+                        type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            <a aria-current="page" class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#about">About Me</a>
+                            <a aria-current="page" class="nav-link" href="#about">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#projects">My Projects</a>
+                            <a aria-current="page" class="nav-link" href="#projects">My Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current="page" class="nav-link" href="#npm">NPM Libraries</a>
                         </li>
                     </ul>
                 </div>
@@ -57,38 +64,44 @@
         </nav>
     </div>
 
-    <div id="banner" class="banner-container">
+    <div class="banner-container" id="banner">
         <div class="banner position-absolute top-0 w-100">
             <div class="coco position-absolute top-0 w-100 h-100">
             </div>
             <div class="container position-relative overflow-hidden py-3">
-                <img src="resources/images/me_new.png" class="img-thumbnail glass bordered profile-picture mb-3" alt="profile-picture">
+                <img alt="profile-picture" class="img-thumbnail glass bordered profile-picture mb-3"
+                     src="resources/images/me_new.png">
                 <div class="greeting d-flex flex-column align-items-center">
                     <div class="glass s1 m-0 py-1 px-3 mb-3">Hello.</div>
                     <div class="glass s2 m-0 pt-1 pb-2 px-3 mb-3">I'm Waruna Udayanga</div>
                     <div class="glass s3 m-0 pt-1 pb-2 px-3">Software Engineer | Web Developer</div>
                 </div>
-                <button class="btn btn-outline-light glass bordered click-me d-block mx-auto"><span>View More <i class="fas fa-angle-down"></i></span></button>
+                <button class="btn btn-outline-light glass bordered click-me d-block mx-auto"><span>View More <i
+                    class="fas fa-angle-down"></i></span></button>
             </div>
         </div>
     </div>
 
     <div id="content">
 
-        <div class="container">
+        <div class="container pb-5">
 
             <section class="padding" id="home"></section>
 
             <section class="anchor" id="about"></section>
 
             <section class="section about">
-                <h1 class="pt-3 mb-5 text-center robo-r fw-bold"><small class="text-muted">#</small> Let me introduce myself. </h1>
+                <h1 class="pt-3 mb-5 text-center robo-r fw-bold"><small class="text-muted">#</small> Let me introduce
+                    myself. </h1>
                 <div class="row">
                     <h2 class="fw-bold"></h2>
                     <h4 class="offset-1 offset-md-1 offset-lg-1 col-10 col-md-10 col-lg-10 text-responsive">
-                        I am a Sri Lankan based Software Engineer and a Full Stack Web Developer. I design Web Applications,
-                        front-end with Angular&nbsp;Material, Bootstrap&nbsp;& jQuery, HTML, CSS and back-end with NodeJS&nbsp;Express, NestJS,
-                        Java&nbsp;Spring Boot, As well as Desktop Applications based on above technologies with the use of ElectronJS.
+                        I am a Sri Lankan based Senior Software Engineer and a Full Stack Web Developer. I design Web
+                        Applications,
+                        front-end with Angular&nbsp;Material, Bootstrap&nbsp;& jQuery, HTML, CSS and back-end with
+                        NodeJS&nbsp;Express, NestJS,
+                        Java&nbsp;Spring Boot, As well as Desktop Applications based on above technologies with the use
+                        of ElectronJS.
                         I also develop Desktop Application in JavaFX.
                     </h4>
                 </div>
@@ -98,7 +111,7 @@
                         <div class="row">
                             <div class="col-sm-6 col-md-6 col-lg-3 text-responsive">
                                 <a class="contact-card pt-3 pt-md-5 mb-4" href="tel:+94756446377">
-                                    <img src="resources/images/icons/phone.png" class="about-icon" alt="phone">
+                                    <img alt="phone" class="about-icon" src="resources/images/icons/phone.png">
                                     <div class="content pt-3 py-md-3">
                                         <h6 class="fw-bold">Call</h6>
                                         <p>+94 75 644 6377</p>
@@ -106,8 +119,9 @@
                                 </a>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 text-responsive">
-                                <a class="contact-card pt-3 pt-md-5 mb-4" href="https://wa.me/94756446377" target="_blank">
-                                    <img src="resources/images/icons/whatsapp.png" class="about-icon" alt="phone">
+                                <a class="contact-card pt-3 pt-md-5 mb-4" href="https://wa.me/94756446377"
+                                   target="_blank">
+                                    <img alt="phone" class="about-icon" src="resources/images/icons/whatsapp.png">
                                     <div class="content pt-3 py-md-3">
                                         <h6 class="fw-bold">WhatsApp</h6>
                                         <p>+94 75 644 6377</p>
@@ -116,7 +130,7 @@
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 text-responsive">
                                 <a class="contact-card pt-3 pt-md-5 mb-4" href="mailto:avawaruna@gmail.com">
-                                    <img src="resources/images/icons/email.png" class="about-icon" alt="phone">
+                                    <img alt="phone" class="about-icon" src="resources/images/icons/email.png">
                                     <div class="content pt-3 py-md-3">
                                         <h6 class="fw-bold">E-mail</h6>
                                         <p>avawaruna@gmail.com</p>
@@ -124,8 +138,9 @@
                                 </a>
                             </div>
                             <div class="col-sm-6 col-md-6 col-lg-3 text-responsive">
-                                <a class="contact-card pt-3 pt-md-5 mb-4" href="https://www.linkedin.com/in/warunaudayanga/" target="_blank">
-                                    <img src="resources/images/icons/linkedin.png" class="about-icon" alt="phone">
+                                <a class="contact-card pt-3 pt-md-5 mb-4"
+                                   href="https://www.linkedin.com/in/warunaudayanga/" target="_blank">
+                                    <img alt="phone" class="about-icon" src="resources/images/icons/linkedin.png">
                                     <div class="content pt-3 py-md-3">
                                         <h6 class="fw-bold">LinkedIn</h6>
                                         <p>warunaudayanga</p>
@@ -138,113 +153,334 @@
 
             </section>
 
-            <section class="anchor mb-3" id="projects"></section>
+            <section class="anchor" id="projects"></section>
 
             <section class="section projects">
                 <h1 class="mt-3 mb-5 robo-r fw-bold"><small class="text-muted">#</small> My Projects</h1>
 
                 <div class="row">
+
                     <div class="col-md-6 col-sm-12 mb-5">
                         <div class="card shadow h-100">
-                            <img src="resources/images/momento/momento.png" class="card-img-top project-thumb" alt="...">
+                            <img alt="..." class="card-img-top project-thumb"
+                                 src="resources/images/momento/momento.png">
                             <div class="card-body d-flex flex-column justify-content-end">
                                 <h5 class="card-title">Momento - (Back-end and Web Admin Interfaces)</h5>
-                                <p class="card-text">Back-end and Web Admin for an Event Planing Platform (Mobile App) Using Node Express + Angular</p>
-                                <p class="card-text">Company - Infact Solutions (PVT) Ltd.</p>
-                                <button id="momento" onclick="popup('momento', 'Project Details', 'View Website', 'btn-success', 'https://momento.lk/')" class="btn btn-success mt-auto">View Details</button>
+                                <p class="card-text">Back-end and Web Admin for an Event Planing Platform (Mobile App)
+                                    Using Node Express + Angular.</p>
+                                <p class="card-text">Company — Infact Solutions (PVT) Ltd.</p>
+                                <button class="btn btn-success mt-auto"
+                                        id="momento"
+                                        onclick="popup('momento', 'Project Details')">View Details
+                                </button>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 col-sm-12 mb-5">
                         <div class="card shadow h-100">
-                            <img src="resources/images/momento_chat/momento_chat.png" class="card-img-top project-thumb" alt="...">
+                            <img alt="..." class="card-img-top project-thumb"
+                                 src="resources/images/momento_chat/momento_chat.png">
                             <div class="card-body d-flex flex-column justify-content-end">
                                 <h5 class="card-title">Momento Chat - (Back-end and Web Admin Interfaces)</h5>
-                                <p class="card-text">Chat Back-end and Web Admin Chat implementation for Momento (Mobile App) Using NestJS + Angular</p>
-                                <p class="card-text">Company - Infact Solutions (PVT) Ltd.</p>
-                                <button id="momento_chat" onclick="popup('momento_chat', 'Project Details', 'View Website', 'btn-success', 'https://momento.lk/')" class="btn btn-success mt-auto">View Details</button>
+                                <p class="card-text">Chat Back-end and Web Admin Chat implementation for Momento (Mobile
+                                    App) Using NestJS + Angular.</p>
+                                <p class="card-text">Company — Infact Solutions (PVT) Ltd.</p>
+                                <button class="btn btn-success mt-auto"
+                                        id="momento_chat"
+                                        onclick="popup('momento_chat', 'Project Details')">View Details
+                                </button>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 col-sm-12 mb-5">
                         <div class="card shadow h-100">
-                            <img src="resources/images/pos/pos.png" class="card-img-top project-thumb" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-end">
-                                <h5 class="card-title">Simple POS System</h5>
-                                <p class="card-text">A POS System (Point of Sale) with HTML, JSP, CSS, JS + Spring MVC</p>
-                                <button id="pos" onclick="popup('pos', 'Project Details', 'View Application', 'btn-dark', 'https://fastsolutions.herokuapp.com/')" class="btn btn-dark">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12 mb-5">
-                        <div class="card shadow h-100">
-                            <img src="resources/images/laknewan/laknewan.png" class="card-img-top project-thumb" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-end">
-                                <h5 class="card-title">Laknewan (Collaborative Project)</h5>
-                                <p class="card-text">Online Shopping Website created with PHP. </p>
-                                <button id="laknewan" onclick="popup('laknewan', 'Project Details', 'View Website', 'btn-primary', 'https://laknewan.com/')" class="btn btn-primary mt-auto">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12 mb-5">
-                        <div class="card shadow h-100">
-                            <img src="resources/images/cge/cge.png" class="card-img-top project-thumb" alt="...">
+                            <img alt="..." class="card-img-top project-thumb" src="resources/images/cge/cge.png">
                             <div class="card-body d-flex flex-column justify-content-end">
                                 <h5 class="card-title">Weighing Software</h5>
-                                <p class="card-text">Angular + Spring Boot + Electron application for Weighing indication and reporting features.</p>
-                                <p class="card-text">Company - Ceylon Weighing Machines Ltd.</p>
-                                <button id="cge" onclick="popup('cge', 'Project Details')" class="btn btn-orange">View Details</button>
+                                <p class="card-text">Angular + Spring Boot + Electron application for Weighing
+                                    indication and reporting features.</p>
+                                <p class="card-text">Company — Ceylon Weighing Machines Ltd.</p>
+                                <button class="btn btn-orange" id="cge" onclick="popup('cge', 'Project Details')">View
+                                    Details
+                                </button>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 col-sm-12 mb-5">
                         <div class="card shadow h-100">
-                            <img src="resources/images/tea/tea.png" class="card-img-top project-thumb" alt="...">
+                            <img alt="..." class="card-img-top project-thumb" src="resources/images/tea/tea.png">
                             <div class="card-body d-flex flex-column justify-content-end">
                                 <h5 class="card-title">Weighing Software</h5>
-                                <p class="card-text">Angular + Spring Boot + Electron application for Weighing indication and reporting features.</p>
-                                <p class="card-text">Company - Ceylon Weighing Machines Ltd.</p>
-                                <button id="tea" onclick="popup('tea', 'Project Details')" class="btn btn-orange">View Details</button>
+                                <p class="card-text">Angular + Spring Boot + Electron application for Weighing
+                                    indication and reporting features.</p>
+                                <p class="card-text">Company — Ceylon Weighing Machines Ltd.</p>
+                                <button class="btn btn-orange" id="tea" onclick="popup('tea', 'Project Details')">View
+                                    Details
+                                </button>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 col-sm-12 mb-5">
                         <div class="card shadow h-100">
-                            <img src="resources/images/ck/ck.png" class="card-img-top project-thumb" alt="...">
+                            <img alt="..." class="card-img-top project-thumb" src="resources/images/ck/ck.png">
                             <div class="card-body d-flex flex-column justify-content-end">
                                 <h5 class="card-title">CK Electronics</h5>
-                                <p class="card-text">PHP + jQuery Stock, Purchases and Services Managing System of a Computer & TV Repair shop.</p>
-                                <button id="ck" onclick="popup('ck', 'Project Details')" class="btn btn-yellow">View Details</button>
+                                <p class="card-text">PHP + jQuery, A Stock, Purchases and Services Managing System of a
+                                    Computer & TV Repair shop.</p>
+                                <button class="btn btn-yellow" id="ck" onclick="popup('ck', 'Project Details')">View
+                                    Details
+                                </button>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 col-sm-12 mb-5">
                         <div class="card shadow h-100">
-                            <img src="resources/images/compareme/compareme.png" class="card-img-top project-thumb" alt="...">
+                            <img alt="..." class="card-img-top project-thumb"
+                                 src="resources/images/laknewan/laknewan.png">
+                            <div class="card-body d-flex flex-column justify-content-end">
+                                <h5 class="card-title">Laknewan (Collaborative Project)</h5>
+                                <p class="card-text">Online Shopping Website created with PHP.</p>
+                                <button class="btn btn-primary mt-auto"
+                                        id="laknewan"
+                                        onclick="popup('laknewan', 'Project Details', 'View Website', 'btn-primary', 'https://laknewan.com/')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="section projects">
+                <h1 class="mt-3 mb-5 robo-r fw-bold"><small class="text-muted">#</small> My Personal Projects</h1>
+
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12 mb-5">
+                        <div class="card shadow h-100">
+                            <img alt="..." class="card-img-top project-thumb" src="resources/images/wu/wu.png">
+                            <div class="card-body d-flex flex-column justify-content-end">
+                                <h5 class="card-title">Portfolio</h5>
+                                <p class="card-text">My portfolio page hosted on GitHub pages.</p>
+                                <button class="btn btn-coco"
+                                        id="wu"
+                                        onclick="popup('wu', 'Project Details', undefined, undefined, undefined, 'https://github.com/warunaudayanga/warunaudayanga.github.io')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-5">
+                        <div class="card shadow h-100">
+                            <img alt="..." class="card-img-top project-thumb" src="resources/images/pos/pos.png">
+                            <div class="card-body d-flex flex-column justify-content-end">
+                                <h5 class="card-title">Simple POS System</h5>
+                                <p class="card-text">A POS System (Point of Sale) with HTML, JSP, CSS, JS + Spring MVC.</p>
+                                <button class="btn btn-dark"
+                                        id="pos"
+                                        onclick="popup(
+                                                    'pos',
+                                                    'Project Details',
+                                                    'View Application',
+                                                    'btn-dark',
+                                                    'https://fs-1glm.onrender.com/',
+                                                    'https://github.com/warunaudayanga/FS'
+                                                )">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-5">
+                        <div class="card shadow h-100">
+                            <img alt="..." class="card-img-top project-thumb"
+                                 src="resources/images/cv/cv.png">
+                            <div class="card-body d-flex flex-column justify-content-end">
+                                <h5 class="card-title">Curriculum Vitae (CV Generator)</h5>
+                                <p class="card-text">Online CV Generator created with Angular.</p>
+                                <button class="btn btn-sleek-blue mt-auto"
+                                        id="cv"
+                                        onclick="popup(
+                                            'cv',
+                                            'Project Details',
+                                            'View Application',
+                                            'btn-sleek-blue',
+                                            'https://curriculum-vitae-lake.vercel.app/',
+                                            'https://github.com/warunaudayanga/curriculum-vitae'
+                                        )">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-5">
+                        <div class="card shadow h-100">
+                            <img alt="..." class="card-img-top project-thumb"
+                                 src="resources/images/compareme/compareme.png">
                             <div class="card-body d-flex flex-column justify-content-end">
                                 <h5 class="card-title">CompareMe</h5>
                                 <p class="card-text">PHP + jQuery Website for Comparing Devices (Mobiles, Laptops, etc.).</p>
                                 <!--suppress HttpUrlsUsage -->
-                                <button id="compare_me" onclick="popup('compareme', 'Project Details', 'View Website', 'btn-dark', 'http://compareme.tk/')" class="btn btn-dark">View Details</button>
+                                <button class="btn btn-dark"
+                                        id="compare_me"
+                                        onclick="popup('compareme', 'Project Details', 'View Website', 'btn-dark', 'http://compareme.tk/')">
+                                    View Details
+                                </button>
                             </div>
                         </div>
                     </div>
+
                 </div>
-
-<!--                <div class="row">-->
-<!--                    <div class="col-md-6 col-sm-12 mb-5 m-auto mt-5">-->
-<!--                        <div class="card details shadow mt-5 mx-5">-->
-<!--                            <div class="card-body d-flex flex-column text-center">-->
-<!--                                <h1 class="card-title">Making some changes</h1>-->
-<!--                                <p class="card-text">We are still building...</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
             </section>
 
-            <br>
+            <section class="anchor" id="npm"></section>
+
+            <section class="section projects">
+                <h1 class="mt-3 mb-5 robo-r fw-bold"><small class="text-muted">#</small> NPM Libraries</h1>
+
+                <div class="d-flex gap-4 mb-4">
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                        <img src="resources/images/logos/github.png" class="img-logo" alt="image-001">
+                        <a href="https://github.com/hichchidev" target="_blank">hichchidev</a>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                        <img src="resources/images/logos/npm.png" class="img-logo" alt="image-001">
+                        <a href="https://www.npmjs.com/~hichchidev" target="_blank">hichchidev</a>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                        <img src="resources/images/logos/facebook.png" class="img-logo" alt="image-001">
+                        <a href="https://web.facebook.com/profile.php?id=100094731325069" target="_blank">hichchidev</a>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                        <img src="resources/images/logos/gmail.png" class="img-logo" alt="image-001">
+                        <a href="mailto:hichchidev@gmail.com">hichchidev@gmail.com</a>
+                    </div>
+                </div>
+
+                <h5 class="mb-5">
+                    As a hobby, I have started to create some npm packages to help develop my projects.
+                    This is intended to be personal use only.
+                    But I have decided to publish them on npm.
+                    I have created a brand for my packages called <b>Hichchi Dev</b>.
+                    Here are my ongoing projects for npm packages. Documentation may not be available as these projects are still in progress.
+                </h5>
+
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12 mb-5">
+                        <div class="card shadow h-100">
+                            <div class="card-body p-4 justify-content-end">
+                                <h5 class="card-title">Hichchi Utils</h5>
+                                <p class="card-text">Common util library for TypeScript projects</p>
+
+                                <div class="d-flex gap-4 small">
+                                    <div class="d-flex gap-2 align-items-center mb-3">
+                                        <img src="resources/images/logos/github.png" class="img-logo-sm" alt="image-001">
+                                        <a href="https://github.com/hichchidev/hichchi-utills" target="_blank">hichchi-utils</a>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center mb-3">
+                                        <img src="resources/images/logos/npm.png" class="img-logo-sm" alt="image-001">
+                                        <a href="https://www.npmjs.com/package/hichchi-utils" target="_blank">hichchi-utils</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mb-5">
+                        <div class="card shadow h-100">
+                            <div class="card-body p-4 justify-content-end">
+                                <h5 class="card-title">Hichchi Angular</h5>
+                                <p class="card-text">UI component library for Angular projects</p>
+
+                                <div class="d-flex gap-4 small">
+                                    <div class="d-flex gap-2 align-items-center mb-3">
+                                        <img src="resources/images/logos/github.png" class="img-logo-sm" alt="image-001">
+                                        <a href="https://github.com/hichchidev/ngx-hichchi" target="_blank">ngx-hichchi</a>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center mb-3">
+                                        <img src="resources/images/logos/npm.png" class="img-logo-sm" alt="image-001">
+                                        <a href="https://www.npmjs.com/package/ngx-hichchi" target="_blank">ngx-hichchi</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12 mb-5">
+                        <div class="card shadow h-100">
+                            <div class="card-body p-4 justify-content-end">
+                                <h5 class="card-title">Hichchi NestJs</h5>
+                                <p class="card-text">NPM library collection for NestJs projects</p>
+
+                                <h6 class="card-title mt-4 small">Hichchi NestJs Common</h6>
+
+                                <div class="small">
+                                    <p class="card-text">Common utils library for Hichchi NestJs libraries</p>
+                                    <div class="d-flex gap-4">
+                                        <div class="d-flex gap-2 align-items-center mb-3">
+                                            <img src="resources/images/logos/github.png" class="img-logo-sm" alt="image-001">
+                                            <a href="https://github.com/hichchidev/hichchi-nestjs-common" target="_blank">hichchi-nestjs-common</a>
+                                        </div>
+                                        <div class="d-flex gap-2 align-items-center mb-3">
+                                            <img src="resources/images/logos/npm.png" class="img-logo-sm" alt="image-001">
+                                            <a href="https://www.npmjs.com/package/hichchi-nestjs-common" target="_blank">hichchi-nestjs-common</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h6 class="card-title mt-4 small">Hichchi NestJs Auth</h6>
+
+                                <div class="small">
+                                    <p class="card-text">Authentication library for NestJs projects</p>
+                                    <div class="d-flex gap-4">
+                                        <div class="d-flex gap-2 align-items-center mb-3">
+                                            <img src="resources/images/logos/github.png" class="img-logo-sm" alt="image-001">
+                                            <a href="https://github.com/hichchidev/hichchi-nestjs-auth" target="_blank">hichchi-nestjs-auth</a>
+                                        </div>
+                                        <div class="d-flex gap-2 align-items-center mb-3">
+                                            <img src="resources/images/logos/npm.png" class="img-logo-sm" alt="image-001">
+                                            <a href="https://www.npmjs.com/package/hichchi-nestjs-auth" target="_blank">hichchi-nestjs-auth</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h6 class="card-title mt-4 small">Hichchi NestJs Crud</h6>
+
+                                <div class="small">
+                                    <p class="card-text">ORM library for NestJs projects (Using TypeORM)</p>
+                                    <div class="d-flex gap-4">
+                                        <div class="d-flex gap-2 align-items-center mb-3">
+                                            <img src="resources/images/logos/github.png" class="img-logo-sm" alt="image-001">
+                                            <a href="https://github.com/hichchidev/hichchi-nestjs-crud" target="_blank">hichchi-nestjs-crud</a>
+                                        </div>
+                                        <div class="d-flex gap-2 align-items-center mb-3">
+                                            <img src="resources/images/logos/npm.png" class="img-logo-sm" alt="image-001">
+                                            <a href="https://www.npmjs.com/package/hichchi-nestjs-crud" target="_blank">hichchi-nestjs-crud</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
 
         </div>
 
