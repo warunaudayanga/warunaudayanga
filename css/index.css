@@ -136,13 +136,15 @@
   display: block;
   margin: auto;
 }
+.section.about h4 {
+  font-size: 1.5em;
+}
 
 @media (max-width: 575.98px) {
   .navbar .navbar-brand {
     margin-right: 0;
     font-size: 20px;
   }
-
   .banner-container .banner .container .greeting .s1 {
     font-size: 40px;
     line-height: 40px;
@@ -155,20 +157,16 @@
     font-size: 15px;
     line-height: 15px;
   }
-
   .anchor {
     height: 70px;
   }
-
   .text-responsive {
     font-size: 14px;
   }
-
   .about-icon {
     width: 75px;
     height: 75px;
   }
-
   .card .project-thumb {
     padding: 25px 25px 15px;
   }
@@ -192,15 +190,12 @@
     font-size: 25px;
     line-height: 25px;
   }
-
   .anchor {
     height: 72px;
   }
-
   .text-responsive {
     font-size: 18px;
   }
-
   .about-icon {
     width: 100px;
     height: 100px;
@@ -219,11 +214,9 @@
     font-size: 30px;
     line-height: 30px;
   }
-
   .anchor {
     height: 87px;
   }
-
   .text-responsive {
     font-size: 20px;
   }
@@ -232,11 +225,9 @@
   .navbar .navbar-brand {
     font-size: 35px;
   }
-
   .navbar .navbar-collapse .nav-link {
     font-size: 25px;
   }
-
   .greeting .s1 {
     font-size: 60px;
     line-height: 60px;
@@ -249,10 +240,13 @@
     font-size: 40px;
     line-height: 40px;
   }
-
   .text-responsive {
     font-size: 25px;
   }
+}
+.custom-jconfirm-buttons {
+  display: flex !important;
+  gap: 15px;
 }
 
 /*# sourceMappingURL=index.css.map */

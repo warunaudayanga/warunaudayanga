@@ -64,10 +64,6 @@ body {
     &.bordered {
         border: 1px solid rgba(255, 255, 255, 0.3);
     }
-    * {
-        backdrop-filter: blur(0) !important;
-        z-index: 1;
-    }
 }
 
 .navbar-toggler-icon {
@@ -109,10 +105,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    .spinner-border {
-
-    }
 }
 .contact-card {
     background-color: white;
@@ -134,4 +126,18 @@ body {
 }
 .bg-darker-white {
     background-color: #bdbdbd;
+}
+
+.img-logo {
+    width: 30px;
+    height: auto;
+}
+
+.img-logo-sm {
+    width: 20px;
+    height: auto;
+}
+
+.line-1-7 {
+    line-height: 1.7;
 }

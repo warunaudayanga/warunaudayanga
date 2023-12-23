@@ -2,12 +2,10 @@
   font-family: "Roboto Light";
   src: url(../resources/fonts/roboto/Roboto-Light.ttf);
 }
-
 @font-face {
   font-family: "Roboto Regular";
   src: url(../resources/fonts/roboto/Roboto-Regular.ttf);
 }
-
 @font-face {
   font-family: "Otomanopee One";
   font-style: normal;
@@ -15,7 +13,6 @@
   font-display: swap;
   src: url(../resources/fonts/OtomanopeeOne-Regular.ttf);
 }
-
 @font-face {
   font-family: "Fredoka One";
   font-style: normal;
@@ -23,7 +20,6 @@
   font-display: swap;
   src: url(../resources/fonts/FredokaOne-Regular.ttf);
 }
-
 * {
   box-sizing: border-box !important;
 }
@@ -67,7 +63,6 @@ html, body {
   background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
-
 .glass.bordered {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -80,17 +75,6 @@ html, body {
   font-weight: bold;
 }
 
-.btn-github {
-  background-color: #171515 !important;
-  border-color: #171515 !important;
-  color: white;
-}
-
-.btn-github:hover {
-  background-color: #171515;
-  color: white;
-}
-
 .btn-dark {
   background-color: #212529 !important;
   border-color: #212529 !important;
@@ -100,20 +84,8 @@ html, body {
 .btn-yellow {
   background-color: #ffbf02 !important;
   border-color: #ffbf02 !important;
-  color: white;
+  color: black;
   font-weight: bold;
-}
-
-.btn-coco {
-  background-color: #587409 !important;
-  border-color: #587409 !important;
-  color: white;
-  font-weight: bold;
-}
-
-.btn-coco:hover {
-  background-color: #587409 !important;
-  color: white;
 }
 
 .btn-orange {
@@ -123,17 +95,6 @@ html, body {
 
 .btn-orange:hover {
   background-color: #d24c01;
-  color: white;
-}
-
-.btn-sleek-blue {
-  background-color: #1f4e79;
-  border-color: #1f4e79;
-  color: white;
-}
-
-.btn-sleek-blue:hover {
-  background-color: #1f4e79;
   color: white;
 }
 
@@ -171,7 +132,6 @@ html, body {
   text-align: center;
   white-space: nowrap;
 }
-
 .contact-card .content p {
   font-size: 14px;
   margin-bottom: 0;
@@ -189,6 +149,10 @@ html, body {
 .img-logo-sm {
   width: 20px;
   height: auto;
+}
+
+.line-1-7 {
+  line-height: 1.7;
 }
 
 /*# sourceMappingURL=common.css.map */
