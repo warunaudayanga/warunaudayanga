@@ -1,143 +1,217 @@
 @font-face {
-    font-family: 'Roboto Light';
-    src: url(../resources/fonts/roboto/Roboto-Light.ttf);
+  font-family: 'Roboto Light';
+  src: url(../resources/fonts/roboto/Roboto-Light.ttf);
 }
+
 @font-face {
-    font-family: 'Roboto Regular';
-    src: url(../resources/fonts/roboto/Roboto-Regular.ttf);
+  font-family: 'Roboto Regular';
+  src: url(../resources/fonts/roboto/Roboto-Regular.ttf);
 }
+
 @font-face {
-    font-family: 'Otomanopee One';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../resources/fonts/OtomanopeeOne-Regular.ttf);
+  font-family: 'Otomanopee One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../resources/fonts/OtomanopeeOne-Regular.ttf);
 }
+
 @font-face {
-    font-family: 'Fredoka One';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../resources/fonts/FredokaOne-Regular.ttf);
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../resources/fonts/FredokaOne-Regular.ttf);
 }
+
 * {
-    box-sizing: border-box !important;
+  box-sizing: border-box !important;
 }
+
 html, body {
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto Light", serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Light", serif;
 }
+
 body {
-    //overflow: hidden;
+  //overflow: hidden;
 }
 
 .robo-r {
-    font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto Regular", sans-serif;
 }
+
 .robo-l {
-    font-family: "Roboto Light", sans-serif;
+  font-family: "Roboto Light", sans-serif;
 }
 
 .body::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-    background-color: transparent;
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
 }
+
 .body::-webkit-scrollbar-track {
-    /*background-color: #aaa;*/
-    box-shadow: inset 0 0 5px 5px #aaa;
-    /*border: solid 3px transparent;*/
+  /*background-color: #aaa;*/
+  box-shadow: inset 0 0 5px 5px #aaa;
+  /*border: solid 3px transparent;*/
 }
+
 .body::-webkit-scrollbar-thumb {
-    /*background-color: #343a40;*/
-    box-shadow: inset 0 0 5px 5px black;
-    /*border: solid 3px transparent;*/
+  /*background-color: #343a40;*/
+  box-shadow: inset 0 0 5px 5px black;
+  /*border: solid 3px transparent;*/
 }
 
 .glass {
-    position: relative;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(3px) saturate(100%) contrast(85%) brightness(130%);
-    background-color: rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    &.bordered {
-        border: 1px solid rgba(255, 255, 255, 0.3);
-    }
+  position: relative;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px) saturate(100%) contrast(85%) brightness(130%);
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+
+  &.bordered {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
 .card-title {
-    font-weight: bold;
+  font-weight: bold;
 }
+
 .btn-dark {
-    background-color: #212529 !important;
-    border-color: #212529 !important;
+  background-color: #212529;
+  border-color: #212529;
+  color: white;
+
+  &:hover {
+    background-color: #17181c;
+    border-color: #17181c;
     color: white;
+  }
 }
+
 .btn-yellow {
-    background-color: #ffbf02 !important;
-    border-color: #ffbf02 !important;
-    color: black;
-    font-weight: bold;
+  background-color: #ffbf02;
+  border-color: #ffbf02;
+  color: white;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #d59e00;
+    border-color: #d59e00;
+    color: white;
+  }
 }
+
 .btn-orange {
-    background-color: #FF6100;
-    color: white;
-}
-.btn-orange:hover {
+  background-color: #FF6100;
+  border-color: #FF6100;
+  color: white;
+
+  &:hover {
     background-color: #d24c01;
+    border-color: #d24c01;
     color: white;
+  }
 }
+
+.btn-github {
+  background-color: #171515;
+  border-color: #171515;
+  color: white;
+
+  &:hover {
+    background-color: #070707;
+    border-color: #070707;
+    color: white;
+  }
+}
+
+.btn-coco {
+  background-color: #587409;
+  border-color: #587409;
+  color: white;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #4a6406;
+    border-color: #4a6406;
+    color: white;
+  }
+}
+
+.btn-sleek-blue {
+  background-color: #1f4e79;
+  border-color: #1f4e79;
+  color: white;
+
+  &:hover {
+    background-color: #1a466e;
+    border-color: #1a466e;
+    color: white;
+  }
+}
+
 .gallery img {
-    display: block;
-    margin: auto auto 40px;
-    max-width: 100%;
+  display: block;
+  margin: auto auto 40px;
+  max-width: 100%;
 }
+
 .anchor {
-    height: calc(var(--nav-height));
+  height: calc(var(--nav-height));
 }
+
 .spinner-box {
-    height: calc(100vh - var(--nav-height));
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  height: calc(100vh - var(--nav-height));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+
 .contact-card {
-    background-color: white;
-    padding: 16px;
-    display: block;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
-    transition: 0.3s;
+  background-color: white;
+  padding: 16px;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+  transition: 0.3s;
 }
+
 .contact-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2) !important;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
 }
+
 .contact-card .content {
-    text-align: center;
-    white-space: nowrap;
-    p {
-        font-size: 14px;
-        margin-bottom: 0;
-    }
+  text-align: center;
+  white-space: nowrap;
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
 }
+
 .bg-darker-white {
-    background-color: #bdbdbd;
+  background-color: #bdbdbd;
 }
 
 .img-logo {
-    width: 30px;
-    height: auto;
+  width: 30px;
+  height: auto;
 }
 
 .img-logo-sm {
-    width: 20px;
-    height: auto;
+  width: 20px;
+  height: auto;
 }
 
 .line-1-7 {
-    line-height: 1.7;
+  line-height: 1.7;
 }

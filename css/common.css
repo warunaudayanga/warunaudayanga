@@ -76,25 +76,70 @@ html, body {
 }
 
 .btn-dark {
-  background-color: #212529 !important;
-  border-color: #212529 !important;
+  background-color: #212529;
+  border-color: #212529;
+  color: white;
+}
+.btn-dark:hover {
+  background-color: #17181c;
+  border-color: #17181c;
   color: white;
 }
 
 .btn-yellow {
-  background-color: #ffbf02 !important;
-  border-color: #ffbf02 !important;
-  color: black;
+  background-color: #ffbf02;
+  border-color: #ffbf02;
+  color: white;
   font-weight: bold;
+}
+.btn-yellow:hover {
+  background-color: #d59e00;
+  border-color: #d59e00;
+  color: white;
 }
 
 .btn-orange {
   background-color: #FF6100;
+  border-color: #FF6100;
+  color: white;
+}
+.btn-orange:hover {
+  background-color: #d24c01;
+  border-color: #d24c01;
   color: white;
 }
 
-.btn-orange:hover {
-  background-color: #d24c01;
+.btn-github {
+  background-color: #171515;
+  border-color: #171515;
+  color: white;
+}
+.btn-github:hover {
+  background-color: #070707;
+  border-color: #070707;
+  color: white;
+}
+
+.btn-coco {
+  background-color: #587409;
+  border-color: #587409;
+  color: white;
+  font-weight: bold;
+}
+.btn-coco:hover {
+  background-color: #4a6406;
+  border-color: #4a6406;
+  color: white;
+}
+
+.btn-sleek-blue {
+  background-color: #1f4e79;
+  border-color: #1f4e79;
+  color: white;
+}
+.btn-sleek-blue:hover {
+  background-color: #1a466e;
+  border-color: #1a466e;
   color: white;
 }
 
