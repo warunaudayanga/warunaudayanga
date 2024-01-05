@@ -158,6 +158,18 @@ body {
   }
 }
 
+.btn-blue {
+  background-color: #000373;
+  border-color: #000373;
+  color: white;
+
+  &:hover {
+    background-color: #000256;
+    border-color: #000256;
+    color: white;
+  }
+}
+
 .gallery img {
   display: block;
   margin: auto auto 40px;

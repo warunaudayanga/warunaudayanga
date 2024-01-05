@@ -120,6 +120,9 @@
 .card.details .card-body {
   padding: 50px;
 }
+.card .btn-pair .btn {
+  width: 50%;
+}
 
 .text-responsive {
   text-align: justify;
@@ -138,6 +141,7 @@
 }
 .section.about h4 {
   font-size: 1.5em;
+  text-align: justify;
 }
 
 @media (max-width: 575.98px) {

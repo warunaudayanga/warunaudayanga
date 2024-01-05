@@ -136,6 +136,9 @@
         }
         margin-bottom: 5px;
     }
+    .btn-pair .btn {
+        width: 50%;
+    }
 }
 
 .text-responsive {
@@ -157,6 +160,7 @@
         }
         h4 {
             font-size: 1.5em;
+            text-align: justify;
         }
     }
 }

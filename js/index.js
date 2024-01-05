@@ -21,7 +21,7 @@ const hideLoading = () => {
     });
 }
 
-const popup = (page, title, button, cls, url, github) => {
+const popup = (page, title, button, cls, url, ...github) => {
     $.alert({
         title: title,
         content: 'url:projects/' + page + '.html',
@@ -36,11 +36,19 @@ const popup = (page, title, button, cls, url, github) => {
                 },
                 btnClass: cls
             },
-            github: {
-                isHidden: !github,
-                text: 'View on GitHub',
+            github1: {
+                isHidden: !github?.length,
+                text: 'View on GitHub' + (github?.length && github[1] ? ' (FE)' : ''),
                 action: () => {
-                    window.open(github, '_blank');
+                    window.open(github[0], '_blank');
+                },
+                btnClass: 'btn-github'
+            },
+            github2: {
+                isHidden: !(github?.length && github[1]),
+                text: 'View on GitHub (BE)',
+                action: () => {
+                    window.open(github[0], '_blank');
                 },
                 btnClass: 'btn-github'
             },
