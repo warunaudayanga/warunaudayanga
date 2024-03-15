@@ -146,6 +146,19 @@ body {
   }
 }
 
+.btn-d-green {
+  background-color: #275e01;
+  border-color: #275e01;
+  color: white;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #2e6e00;
+    border-color: #2e6e00;
+    color: white;
+  }
+}
+
 .btn-sleek-blue {
   background-color: #1f4e79;
   border-color: #1f4e79;
@@ -154,6 +167,18 @@ body {
   &:hover {
     background-color: #1a466e;
     border-color: #1a466e;
+    color: white;
+  }
+}
+
+.btn-blue {
+  background-color: #000373;
+  border-color: #000373;
+  color: white;
+
+  &:hover {
+    background-color: #000256;
+    border-color: #000256;
     color: white;
   }
 }
