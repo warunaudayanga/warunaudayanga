@@ -1,6 +1,6 @@
-@import "../assets/bootstrap-5.0.2/scss/functions";
-@import "../assets/bootstrap-5.0.2/scss/variables";
-@import "../assets/bootstrap-5.0.2/scss/mixins/breakpoints";
+@import "../assets/bootstrap-5.3.3/scss/functions";
+@import "../assets/bootstrap-5.3.3/scss/variables";
+@import "../assets/bootstrap-5.3.3/scss/mixins/breakpoints";
 
 :root {
     --nav-height: 70px;
@@ -135,6 +135,7 @@
             padding: 50px;
         }
         margin-bottom: 5px;
+        margin-right: 10px;
     }
     .btn-pair .btn {
         width: 50%;

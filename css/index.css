@@ -116,6 +116,7 @@
 }
 .card.details {
   margin-bottom: 5px;
+  margin-right: 10px;
 }
 .card.details .card-body {
   padding: 50px;
