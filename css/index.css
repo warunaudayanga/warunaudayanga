@@ -60,7 +60,7 @@
 }
 .banner-container .banner .coco {
   height: 100vh;
-  background: transparent url("../resources/images/backgrounds/beach-coco.png") no-repeat fixed;
+  background: transparent url("../resources/images/backgrounds/beach-coco.png") no-repeat fixed !important;
   background-size: cover;
 }
 .banner-container .banner .container {
