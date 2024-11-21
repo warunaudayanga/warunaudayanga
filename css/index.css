@@ -54,14 +54,14 @@
 }
 .banner-container .banner {
   height: 100vh;
-  background: url("../resources/images/backgrounds/beach-bg.jpg") fixed;
+  background: url("/resources/images/backgrounds/beach-bg.jpg") fixed;
   background-size: cover;
   z-index: 1;
 }
 .banner-container .banner .coco {
   height: 100vh;
   background-repeat: no-repeat;
-  background-image: url("../resources/images/backgrounds/beach-coco.png") !important;
+  background-image: url("/resources/images/backgrounds/beach-coco.png") !important;
   background-color: transparent;
   background-attachment: fixed;
   background-size: cover;

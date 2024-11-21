@@ -53,7 +53,7 @@
     &.hide {
         .banner {
             height: var(--nav-height);
-            //background: url("../resources/images/backgrounds/beach-bg.png") 0 calc(-100vh + var(--nav-height)) !important;
+            //background: url("/resources/images/backgrounds/beach-bg.png") 0 calc(-100vh + var(--nav-height)) !important;
             * {
                 display: none !important;
             }
@@ -61,15 +61,15 @@
     }
     .banner {
         height: 100vh;
-        //background: url("../resources/images/backgrounds/compress/beach-bg_vectorized.png") fixed;
-        background: url("../resources/images/backgrounds/beach-bg.jpg") fixed;
+        //background: url("/resources/images/backgrounds/compress/beach-bg_vectorized.png") fixed;
+        background: url("/resources/images/backgrounds/beach-bg.jpg") fixed;
         background-size: cover;
         z-index: 1;
         .coco {
             height: 100vh;
-            //background: rgb(0 181 255 / 40%) url("../resources/images/backgrounds/compress/beach-coco_vectorized.png") no-repeat fixed;
+            //background: rgb(0 181 255 / 40%) url("/resources/images/backgrounds/compress/beach-coco_vectorized.png") no-repeat fixed;
             background-repeat: no-repeat;
-            background-image: url("../resources/images/backgrounds/beach-coco.png") !important;
+            background-image: url("/resources/images/backgrounds/beach-coco.png") !important;
             background-color: transparent;
             background-attachment: fixed;
             background-size: cover;
